@@ -5,11 +5,11 @@
 #2. 使い方
 2.1 データベース初期
 //データベースとテブール情報を管理するクラス
-DatabaseBuilder dbBuilder = new DatabaseBuilder(dbname, version, queryBuilder);
-注意：「queryBuilder」は以下のような物データベース作成、変更スクリプだ
-List<String> ver1 = new ArrayList<>();
-String CREATE_SPORT = "CREATE TABLE t_sport (t_id INTEGER PRIMARY KEY AUTOINCREMENT, t_category text, dt_created date)";
-ver1.add(CREATE_SPORT);
+DatabaseBuilder dbBuilder = new DatabaseBuilder(dbname, version, queryBuilder);<br/>
+注意：「queryBuilder」は以下のような物データベース作成、変更スクリプだ<br/>
+List<String> ver1 = new ArrayList<>();<br/>
+String CREATE_SPORT = "CREATE TABLE t_sport (t_id INTEGER PRIMARY KEY AUTOINCREMENT, t_category text, dt_created date)";<br/>
+ver1.add(CREATE_SPORT);<br/>
 builder.add(ver1);
 
 //テブール一覧を入力する<br/>
